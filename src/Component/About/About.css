@@ -1,0 +1,42 @@
+.info span{
+    margin: 0 10px;
+    text-align: start;
+}
+
+#about .btn img {
+    width: 35px;
+}
+#about .myself .img{
+    background: rgb(128, 128, 128);
+    filter: blur(10px);
+    padding: 0 15px ;
+    padding-top:15px;
+    border-radius: 2px;
+    filter: grayscale(10);
+}
+#about .myself img:hover{
+    filter: none;
+    transition: 1s ;
+}
+#about  button{
+    margin: 7px 0;
+    width: 10rem;
+    height: 60px;
+}
+.btn  :hover{
+    transform: scale(0.9);
+    transition: 1s;
+}
+.header-section .underline{
+    display: flex;
+    background: yellow;
+    border-bottom:solid yellow;
+    width: 10%;
+    height: 5px;
+    border-radius: 20px;
+}
+.header-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,55 @@
+#navbar{
+    position: fixed;
+    height: 100px;
+    width: 100vw;
+    z-index: 2;
+}
+.manuitem{
+    list-style: none;
+}
+.manuitem li{
+    margin: 40px;
+    font-weight: bolder;
+}
+ .nav-link{
+    margin: 15px;
+}
+.logo{
+    width: 130px;
+}
+.contect .contactbtn{
+    width:200px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+#navbar .contect{
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .navbar-toggler{
+    background: transparent;
+}
+.navbar-toggler .bars{
+    color: yellow;
+}
+.contect a{
+    font-weight:600;
+}
+.contect .contect-img{
+    width: 27px;
+}
+.navbar-nav .nav-item:hover{
+    color: yellow;
+    border-bottom: solid yellow;
+    border-width: 3px;
+    transition: 50ms;
+    border-radius: 2px;
+}
+.navbar-nav .nav-item{
+    margin: 0 30px;
+    text-decoration: none;
+}

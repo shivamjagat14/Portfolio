@@ -1,0 +1,248 @@
+@media (min-width: 319px) and (max-width:426px){
+    /* navbar */
+    #navbar{
+        background: #000;
+    }
+    .navbar-nav .nav-item :hover{
+        border-width: 10px;
+        justify-content: center;
+    }
+   .collapse {
+    direction: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   .collapse ul li{
+    margin:20px;
+   }
+   .navbar-nav {
+    display: flex;
+    justify-content: center;
+   }
+   .navbar-collapse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    /* Intro section */
+    #intro .introcontant{
+        position: relative;
+        top:10rem;
+        bottom: 0;
+        right: 0;
+        left: -20px;
+        z-index: 1;
+    }
+    #intro .myimg{
+        position: absolute;
+        width: 250px;
+        top:85px;
+        bottom: 0; 
+        right: 0;
+        left: auto;
+    }
+    .introcontant .rols{
+        display: block;
+        font-size: 2.3rem;
+        -webkit-text-stroke: 1px yellow;
+        color:  transparent;
+        height: 100%;
+        animation: rols-changes 3s infinite;
+    } 
+    /* skills section */
+    #skills .skills .skill{
+        flex-direction: column;
+        text-align: center;
+    }
+    #skills .skills .skill img{
+        width: 55px;
+    }
+    #skills .skills .skill .containe{
+        padding: 5px;
+    }
+    .Cardskill{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border: 3px solid rgba(128, 128, 128, 0.296);
+        border-radius: 20px;
+        width: 20rem;
+    }
+    .skillheader{
+        margin-bottom: 40px;
+    }
+    /* about */
+    #about .myself{
+        flex-direction: column;
+    }
+    #about .myself .img{
+        width: 12rem;
+    }
+    .info .addrase{
+        position: relative;
+        left: 0px;
+    }
+    #about .info{
+        flex-direction: column;
+    }
+    #about .info .row1,.row2{
+        flex-direction: column;
+    }
+    #about .btn{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about .btn button{
+        margin: 7px 0;
+        width: 10rem;
+        height: 50px;
+    }
+    #about .btn img {
+        width: 35px;
+    }
+    #about .btn .hiremebtn{
+        margin: 0;
+    }
+    #about h3{
+        padding-top: 12rem;
+    }
+
+        /* skills section */
+    #skills .skills .skill img{
+        width: 55px;
+    }
+    #skills .skills .skill .containe{
+        padding: 5px;
+    }
+
+    /* portfolio */
+     #portfolio .gallary .project{
+        margin: 15px 10px;
+    }
+    .gallary .project{
+        width: 300px;
+        height: 600px;
+        padding: 10px;
+    }
+    .gallary .projectimg{
+        width: 17rem;
+        border-radius: 10px;
+    }
+
+    /* contact section */
+    #contact .form input{
+        width: 16rem;
+    }
+    #contact .form textarea{
+        width: 20rem;
+    }
+    .form-section {
+        flex-direction: column;
+    }
+    .form .inputs{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form{
+        margin: 0;
+    }
+    .form .inputName{
+        margin: 0;
+    }
+    .form .inputs input{
+        margin: 10px 0;
+    }
+    .form-section .contain{
+        padding: 0;
+    }    
+}
+
+@media (min-width: 426px) and (max-width:769px){
+    /* intro */
+    #intro {
+         width: 100%;
+        padding: 200px 0 70px 0;
+    }
+    .introcontant .rols{
+        font-size: 2.5rem;
+    }
+    #intro .myimg{
+        width: 350px;
+    }
+    #portfolio .gallary .project{
+        margin: 25px 10px;
+    }
+    /* about */
+    #about .myself{
+        flex-direction: column;
+    }
+    #about .myself .img{
+        width: 23rem;
+    }
+    #about .info{
+        flex-direction: column;
+    }
+    .info .addrase{
+        position: relative;
+        left: 45px;
+    }
+    #about .btn img {
+        width: 35px;
+    }
+    #about .btn button{
+        margin: 7px 0;
+        width: 10rem;
+        height: 60px;
+        padding: 5px;
+    }
+    #about h3{
+        padding-top: 12rem;
+    }
+    .info .addrase{
+        position: relative;
+        left: 45px;
+    }
+    /* skill */
+    #Cardskill{
+        width: 15rem;
+    }
+
+     /* portfolio */
+     #portfolio .gallary .project{
+        margin: 15px 10px;
+    }
+    .gallary .project{
+        width: 300px;
+        height: 600px;
+        padding: 10px;
+    }
+    .gallary .projectimg{
+        width: 17rem;
+        border-radius: 10px;
+    }
+    /* contect section  */
+    .form-section {
+        flex-direction: column;
+    }
+}
+
+
+@media (min-width:769px) and (max-width: 1024px){ 
+    .form-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* about */
+    .info .addrase{
+        position: relative;
+        left: 45px;
+    }
+}
+@media (min-width: 1024px) and (max-width:1440px){
+    /* about */
+    .info .addrase{
+        position: relative;
+        left: 45px;
+    }
+}

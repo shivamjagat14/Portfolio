@@ -1,0 +1,83 @@
+
+/* Intro-section animations */
+.introcontant .myname::before{
+    content: attr(data-text);
+    position: absolute;
+    top:3px;
+    left: 13px;
+    width: 0%;
+    height: 100%;
+    -webkit-text-stroke: 0.1vw rgba(128, 128, 128, 0.299);
+    color: yellow;
+    border-right: 2px solid yellow;
+    overflow: hidden;
+    animation: nameanimation 2.5s linear infinite ;
+}
+@keyframes nameanimation 
+{
+    /* 0% , 10% ,100%{
+        width: 0;
+    } */
+    70%,90%{
+        width:100%;
+    }
+}
+
+.introcontant .work{
+    display: flex;
+    box-sizing: content-box;
+    height: 80px;
+    padding: 10px;
+}
+.introcontant .workrols{
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes rols-changes {
+    0%,25%{
+        transform: translateY(15%);
+    }
+    50%{
+        transform: translateY(-100%);
+    }
+    75%{
+        transform: translateY(-200%);
+    }
+    100%{
+        transform: translateY(-300%);
+    }
+}
+
+
+/* About header animation */
+.headinganimation{
+    animation: headeranimation both;
+    animation-timeline: view(40% 0%);    
+}
+@keyframes headeranimation {
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* About contain animation */
+.rightslide{
+    animation: rightslideanimation both ;
+    animation-timeline: view(20% 0%);
+}
+@keyframes rightslideanimation {
+    from{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

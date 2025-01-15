@@ -1,0 +1,64 @@
+.form input{
+    margin: 0 7px;
+    width: 17rem;
+    height: 55px;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.1);
+    border: none;
+}
+.form textarea{
+    color: white;
+    padding:10px;
+    width: 35rem;
+    height: 150px;
+    border-radius: 5px;
+    background: rgba(128, 128, 128, 0.1);
+    border: none;
+}
+.form button{
+    width:200px;
+    height:50px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.form-section {
+    padding: 20px;
+    margin: 5px;
+}
+.form{
+    margin: 0 100px;
+}
+.form-section .contain{
+    padding: 10px 10rem;
+}
+.form-section .content h4{
+    padding: 10px ;
+}
+.form-section .sociale a{
+    border-radius: 10px;
+    font-size: x-large;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 60px;
+    background: #000;
+}
+.sociale a:hover{
+    border: solid white;
+    box-shadow: 1px 1px 20px white;
+}
+.inputs input[type=text]{
+    padding: 10px;
+    color:white;
+}
+.inputs input[type=email]{
+    padding: 10px;
+    color:white;
+}
+.inputs textarea{
+    padding: 10px;
+    color:white;
+}
+.contactheader{
+    margin-bottom: 70px;
+}

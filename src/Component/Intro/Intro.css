@@ -1,0 +1,45 @@
+#intro{
+width: 100%;
+padding:150px 0 70px 0;
+}
+#intro .myimg{
+    width: 350px;
+}
+.introcontant .rols{
+    display: block;
+    font-size: 3.5rem;
+    -webkit-text-stroke: 1px yellow;
+    color:  transparent;
+    height: 100%;
+    animation: rols-changes 3s infinite;
+}
+
+.myname{
+    color:yellow;
+    top:1px;
+}
+.introcontant .workcontent{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.introcontant h2,h1{
+    font-weight: bolder;
+}
+.introcontant .myname{
+    position: relative;
+    font-size: 3.5rem;
+    /* -webkit-text-stroke: 0.1vw rgba(128, 128, 128, 0.299); */
+    color: transparent;
+}
+
+.introcontant .workcontent{
+    -webkit-text-stroke: 1px yellow;
+    color: transparent;
+    font-size: xx-large;
+}
+.hireme .hiremeimg{
+    width: 30px;
+}
+#intro .hireme .hiremebtn{
+    border: none;
+}

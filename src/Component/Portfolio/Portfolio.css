@@ -1,0 +1,41 @@
+.portfolio{
+    color: white;
+}
+.gallary .project{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin: 10px;
+    width: 350px;
+    height: 500px;
+    background: rgba(128, 128, 128, 0.184);
+    padding: 15px;
+    border-radius:10px;
+}
+.project button{
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+}
+.gallary .projectlogo{
+    display: flex;
+    justify-content: center;
+}
+.gallary .projectimg{
+    width: 20rem;
+    border-radius: 10px;
+}
+.portfolioheader{
+    margin-bottom: 80px;
+}
+.visitbtn a{
+    font-size: xx-large;
+    background: yellow;
+    height:40px;
+    width: 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
