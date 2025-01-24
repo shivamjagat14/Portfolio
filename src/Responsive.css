@@ -8,22 +8,13 @@
         justify-content: center;
     }
    .collapse {
-    direction: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
    }
    .collapse ul li{
     margin:20px;
    }
-   .navbar-nav {
-    display: flex;
-    justify-content: center;
-   }
-   .navbar-collapse{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
     /* Intro section */
     #intro .introcontant{
         position: relative;
@@ -121,7 +112,7 @@
     }
     .gallary .project{
         width: 300px;
-        height: 600px;
+        height: 450px;
         padding: 10px;
     }
     .gallary .projectimg{

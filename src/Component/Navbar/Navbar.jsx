@@ -1,22 +1,28 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Navbar/Navbar.css';
 import { Link } from 'react-scroll';
 // images
 import logo from '../../Assets/assets/logo.png';
 import contactimg from '../../Assets/assets/contact.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+import { faBarsStaggered, faCross, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export const Navbar = () => {
+  let [bars ,setbars]=useState(true);
   return (
     <nav id="navbar" className="navbar navbar-expand-lg navbar-light bg-dark">
       <div className="container navbarcontainer bg-dark">
         <a className="navba r-brand" href="#"><img src={logo} alt="logo" className="logo" /></a>
-        <button className="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
-          <span className='bars'><FontAwesomeIcon icon={faBarsStaggered}/></span>
+        <button className="navbar-toggler " onClick={()=>{setbars(!bars)}} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> 
+          {
+            (bars)?
+            <span className='bars'><FontAwesomeIcon icon={faBarsStaggered}/></span>
+            :
+            <span className='bars'><FontAwesomeIcon icon={faXmark}/></span>
+          }
         </button>
           <div className="collapse navbar-collapse justify-content-around" id="navbarNav">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav text-center">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#"><Link className='menulistItems text-decoration-none text-white' activeClass='active' to='intro' spy={true} smooth={true} offset={-100}>Home</Link></a>
               </li>
@@ -33,7 +39,7 @@ export const Navbar = () => {
           <div className="contect d-flex justify-content-center rounded-pill fs-5 my-4 bg-white">
             <a className="nav-link text-decoration-none " href="#"><Link to='contact' className='text-decoration-none text-dark' spy={true} smooth={true} offset={-100} ><img src={contactimg} alt="contect-img" className="contect-img mx-1" />Contact me</Link></a>
           </div>
-          </div>
+        </div>
       </div>
     </nav>
   )

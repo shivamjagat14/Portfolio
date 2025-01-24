@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Contact.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons'
@@ -7,8 +7,11 @@ import Swal from 'sweetalert2'
 
 export const Contact = () => {
 
+// function
+
   // web3forms sent massage
   const onSubmit = async (e) => {
+   
     e.preventDefault();
     const formData = new FormData(e.target);
 
@@ -32,7 +35,6 @@ export const Contact = () => {
         text: "Massage Sent Successfully !",
         icon: "success"
       });
-      // console.log("Success", res);
     }
   };
 
@@ -57,8 +59,8 @@ export const Contact = () => {
         </div>
         <form onSubmit={(e)=>{onSubmit(e)}} className=' form '>
           <div className="inputs d-flex justify-content-end my-4">
-            <input type="text" className="inputName  rightslide" name='name' placeholder="Your name" />
-            <input type="email" className="inputEmail" name='email' placeholder="Your Email" />
+            <input type="text"  className="inputName  rightslide" name='name' placeholder="Your name" />
+            <input type="email"  className="inputEmail" name='email' placeholder="Your Email" />
           </div>
           <div className="textarea d-flex justify-content-end rightslide">
             <textarea placeholder='Your Message' name='message' className='my-3'></textarea>
